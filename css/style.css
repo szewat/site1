@@ -1,0 +1,296 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("normalize.css");
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body, .wrap {
+  min-height: 100%; }
+
+body {
+  color: #364347;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+  background: #fad46b; }
+
+.sidebar {
+  width: 100%;
+  height: 100%; }
+  @media screen and (max-width: 520px) {
+    .sidebar {
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 760px) {
+    .sidebar {
+      background: url("images/hero.png") no-repeat bottom center;
+      background-size: 80%;
+      padding-bottom: 200px;
+      float: left;
+      width: 20%; } }
+  .sidebar .my-info {
+    text-align: center;
+    padding: 30px 0; }
+    .sidebar .my-info .portfolio-image {
+      border-radius: 50%; }
+    .sidebar .my-info h1, .sidebar .my-info h2 {
+      font-weight: normal; }
+    .sidebar .my-info h1 {
+      font-size: 120%; }
+    .sidebar .my-info h2 {
+      font-size: 100%; }
+    @media screen and (max-width: 520px) {
+      .sidebar .my-info {
+        text-align: left;
+        padding: 30px 0 60px 0; }
+        .sidebar .my-info .portfolio-image {
+          float: left;
+          margin: 0 10px 20px 10px;
+          width: 36%; }
+        .sidebar .my-info h1, .sidebar .my-info h2 {
+          float: left;
+          width: 48%;
+          margin: 20px 10px 0; }
+        .sidebar .my-info h1 {
+          font-size: 200%;
+          line-height: 110%; }
+        .sidebar .my-info h2 {
+          font-size: 110%; } }
+
+.searchbar {
+  text-align: center; }
+  @media screen and (max-width: 520px) {
+    .searchbar {
+      display: none; } }
+
+.social {
+  width: 120px;
+  margin: 0 auto; }
+  @media screen and (max-width: 520px) {
+    .social {
+      margin: 0 30px; } }
+  .social a {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+    background: url(images/social-media.png) no-repeat;
+    text-indent: -9999px; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+      .social a {
+        background: url(images/social-media@2x.png) no-repeat;
+        background-size: 101px 51px; } }
+    .social a.dribbble {
+      background-position: 0px 0px; }
+      .social a.dribbble:hover {
+        background-position: 0px -25px; }
+    .social a.poopy {
+      background-position: -25px 0px; }
+      .social a.poopy:hover {
+        background-position: -25px -25px; }
+    .social a.facebook {
+      background-position: -50px 0px; }
+      .social a.facebook:hover {
+        background-position: -50px -25px; }
+    .social a.github {
+      background-position: -75px 0px; }
+      .social a.github:hover {
+        background-position: -75px -25px; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+  margin: 0 135px 10px;
+  text-align: left; }
+  @media screen and (min-width: 760px) {
+    ul {
+      margin: 0 0 0 25px;
+      display: block;
+      width: auto; } }
+  ul.open {
+    display: inline-block;
+    margin: 0 auto 10px 60px; }
+    @media screen and (min-width: 760px) {
+      ul.open {
+        margin: 0 0 0 25px;
+        display: block;
+        width: auto; } }
+  ul li a {
+    color: #364347;
+    text-decoration: none;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    transition: color 0.4s ease; }
+    ul li a:hover, ul li a.current-menu-item {
+      color: #f84545;
+      -webkit-transition: color 0.4s ease;
+      -moz-transition: color 0.4s ease;
+      -o-transition: color 0.4s ease;
+      -ms-transition: color 0.4s ease;
+      transition: color 0.4s ease; }
+
+.menus {
+  text-align: center; }
+  @media screen and (min-width: 760px) {
+    .menus {
+      padding: 20px 30px; } }
+  .menus h3 {
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: normal;
+    padding-left: 25px;
+    cursor: pointer;
+    width: 20%;
+    margin: 20px 110px 10px; }
+    @media screen and (min-width: 360px) {
+      .menus h3 {
+        margin: 20px auto 20px; } }
+    @media screen and (max-width: 520px) {
+      .menus h3 {
+        float: left;
+        margin: 0 20px 30px 20px; } }
+    @media screen and (min-width: 760px) {
+      .menus h3 {
+        margin: 20px 0 10px 0; } }
+    .menus h3:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 18px;
+      display: block;
+      background: url(images/nav-sprite.png) no-repeat; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+        .menus h3:before {
+          background: url(images/nav-sprite@2x.png) no-repeat;
+          background-size: 49px 18px; } }
+    .menus h3.work {
+      color: #f84545; }
+      .menus h3.work:before {
+        width: 15px;
+        background-position: 0px 0px; }
+    .menus h3.about {
+      color: #28948c; }
+      .menus h3.about:before {
+        width: 17px;
+        background-position: -15px 0px; }
+    .menus h3.contact {
+      color: #009dcd; }
+      .menus h3.contact:before {
+        width: 17px;
+        background-position: -32px 0px; }
+
+.content {
+  width: 100%;
+  min-height: 100%;
+  background: #FFF; }
+  @media screen and (min-width: 760px) {
+    .content {
+      float: left;
+      width: 80%; } }
+  .content .portfolio-item {
+    background: #e1eef3; }
+    .content .portfolio-item:before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      background: #a3bbc3;
+      top: 0px;
+      left: 17px;
+      bottom: 0px; }
+    .content .portfolio-item.first:before {
+      top: 30px; }
+    .content .portfolio-item .portfolio-info {
+      min-height: 100%;
+      color: #5e5e5e;
+      padding: 20px 20px 20px 40px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
+      @media screen and (min-width: 760px) {
+        .content .portfolio-item .portfolio-info {
+          float: left;
+          width: 80%; } }
+      .content .portfolio-item .portfolio-info .date {
+        font-size: 100%;
+        color: #364347; }
+      .content .portfolio-item .portfolio-info .title {
+        font-size: 110%;
+        color: #364347;
+        margin-bottom: 10px; }
+        .content .portfolio-item .portfolio-info .title:before {
+          content: "";
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          border: 2px solid #f7f7f7;
+          background: #f84545;
+          left: -29px;
+          top: 3px; }
+  .content .portfolio-image {
+    padding: 20px;
+    background: #FFF;
+    border-left: 1px solid #dedede;
+    text-align: center; }
+    @media screen and (min-width: 760px) {
+      .content .portfolio-image {
+        float: left;
+        width: 70%; } }
+    .content .portfolio-image img {
+      width: 100%;
+      max-width: 610px;
+      height: auto; }
+    .content .portfolio-image div.loading img {
+      width: auto;
+      height: auto; }
+
+div.loading {
+  color: #c4c4c4;
+  position: absolute;
+  width: 100px;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -50px; }
+  div.loading img {
+    vertical-align: middle; }
+    div.loading img.rotate {
+      -webkit-animation-name: rotate;
+      -ms-animation-name: rotate;
+      animation-name: rotate;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+      animation-timing-function: linear; }
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: center center;
+    transform-origin: center center; } }
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center; } }
+
+/*# sourceMappingURL=style.css.map */
